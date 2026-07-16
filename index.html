@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
+        <div class="header-container">
+            <div class="logo">
         <img src="images/Logo.png" alt="Logo" width="80">
+        </div>
         <nav>
             <ul>
                 <li><a href="#Home">Home</a></li>
@@ -17,72 +21,94 @@
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
-            <form>
+        </nav>
+        <div class="search-bar">
+                 <form>
                     <input type="text" placeholder="Search">
                     <button type="submit">Search</button>
                 </form>
-        </nav>
-        <hr>
+        </div>
+        </div>
     </header>
     <main>
 <section id="Home">
+     <div class="home-container">
+        <div class="about-text">
         <h1> I'm Lakshya Paudel a BIT Student </h1>
         <p>
             Passionate Bachelor of Information Technology (BIT) student with strong interests in programming, cloud computing, cybersecurity, Linux systems, and emerging technologies. Continuously learning and building technical skills for a successful career in IT.
         </p>
-<img src="images/LakshyaPhoto.jpg" alt="Lakshya Photo" width="300">
-<hr>
+        </div>
+    <img src="images/LakshyaPhoto.jpg" alt="Lakshya Photo" width="300">
+    </div>
+</section>
 <Section id="About">
+    <div class="about-container">
     <h1> About Me </h1>
     <p>
         Hello! I'm Lakshya Paudel from Kathmandu, Nepal. Currently pursuing a Bachelor of Information Technology (BIT) at Model Institute of Technology (MIT) from 2024 to 2028. I enjoy exploring software development, cloud computing, cybersecurity, and operating systems. My goal is to continuously learn modern technologies and become a skilled IT professional.
     </p>
+    </div>
     </Section>
-    <hr>
 <Section id="Technical-Skills">
-    <h1> Technical Skills </h1>
-    <dl>
+    <div class="skills-container">
+    <h1 class="skills-heading"> Technical Skills </h1>
+    <div class="skills-grid">
+        <div class="skills-card">
         <dt>Programming Languages</dt>
         <dd>C, C++, Java, Python</dd>
-
+        </div>
+        <div class="skills-card">
         <dt>Web Development</dt>
         <dd>HTML, CSS, JavaScript</dd>
-
+        </div>
+        <div class="skills-card">
         <dt>Cloud Computing</dt>
         <dd>AWS</dd>
-
+        </div>
+        <div class="skills-card">
         <dt>Cybersecurity</dt>
         <dd>Network Security, Ethical Hacking</dd>
-
+        </div>
+        <div class="skills-card">
         <dt>Operating Systems</dt>
         <dd>Linux, Windows</dd>
-    </dl>
+        </div>
+    </div>
+    </div>
     </Section>
-    <hr>
     <Section id="Interests">
-        <h1> My Interests </h1>
-        <dl>
+        <div class="interests-container">
+        <h1 class="interests-heading"> My Interests </h1>
+        <div class="interests-grid">
+            <div class="interests-card">
             <dt>Programming</dt>
             <dd>Exploring different programming languages and building software applications.</dd>
-
+            </div>
+            <div class="interests-card">
             <dt>Cloud Computing</dt>
             <dd>Learning about cloud platforms and services to deploy and manage applications.</dd>
-
+            </div>
+            <div class="interests-card">
             <dt>Cybersecurity</dt>
             <dd>Understanding security principles and practices to protect systems and data.</dd>
-
+            </div>
+            <div class="interests-card">
             <dt>Linux Systems</dt>
             <dd>Working with Linux operating systems for development and administration tasks.</dd>
-
+            </div>
+            <div class="interests-card">
             <dt>Emerging Technologies</dt>
             <dd>Keeping up with the latest trends and innovations in the tech industry.</dd>
-
+            </div>
+            <div class="interests-card">
             <dt> Games</dt>
             <dd>Playing and exploring various video games for entertainment and relaxation.</dd>
-        </dl>
+            </div>
+        </div>
     </Section>
-    <hr>
     <section id="Projects">
+         <div class="projects-container">
         <h1> My Projects </h1>
         <article>
             <h3> Movie Ticket Booking System </h3>
@@ -99,27 +125,38 @@
         </p>
         <p><a href="https://github.com/LakshyaPaudel/online-mobile-billing.git" target="_blank">click here to view this project</a></p>
     </article>
+        </div>
     </section>
-    <hr>
     <Section id="Contact">
+        <div class="contact-container">
         <h1> Contact Information </h1>
-        
-        <label>Full Name </label><br>
-        <input type="text" name="fullname" placeholder="Hari Krishna"><br><br>
-
-        <label>Email Address</label><br>
-        <input type="email" name="email" placeholder="harikrishna@example.com"><br><br>
-
-        <label>Message</label><br>
-        <textarea rows="5" cols="30"></textarea><br><br>
-        <button type="submit">Send Message</button><br><br>
-        </Section>
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/FacebookLogo.png" alt="Facebook" width="30"></a> |
-        <a href="https://www.instagram.com" target="_blank"><img src="images/InstagramLogo.webp" alt="Instagram" width="30"></a> |
-        <a href="https://www.linkedin.com/in/lakshya-paudel-b1a0b7242/" target="_blank"><img src="images/LinkedinLogo.avif" alt="LinkedIn" width="30"></a> |
-        <a href="https://github.com/LakshyaPaudel" target="_blank"><img src="images/GitHubLogo.png" alt="GitHub" width="30"></a>
+        <form>
+        <label>Full Name </label>
+        <input type="text" name="fullname" placeholder="Hari Krishna">
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="harikrishna@example.com">
+        <label>Message</label>
+        <textarea rows="5" cols="30"></textarea>
+        <button type="submit">Send Message</button>
+        </form>
+        </div>
+    </Section>
+    <section id="follow-me">
+    <div class= "follow-container">
+    <h1 class="social-section">Follow Me!</h1>
+    <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/FacebookLogo.png" alt="Facebook" width="30">
+        <i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="images/InstagramLogo.webp" alt="Instagram" width="30">
+        <i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/lakshya-paudel-b1a0b7242/" target="_blank"><img src="images/LinkedinLogo.avif" alt="LinkedIn" width="30">
+        <i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/LakshyaPaudel" target="_blank"><img src="images/GitHubLogo.png" alt="GitHub" width="30">
+        <i class="fab fa-github"></i></a>
+    </div>
+    </div>
+    </section>
     </main>
-    <hr>
     <footer>
         <p>&copy; 2026 Lakshya Paudel. All rights reserved.</p>
     </footer>
