@@ -33,13 +33,13 @@ header input, header button{
     border: none;
 }
 header input{
-    width: 250px;
+    width: 60%;
 }
 header button{
-    width: 100px;
+    width: 25%;
     background-color: darkseagreen;
     color: azure;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 main{
     max-width: 1100px;
